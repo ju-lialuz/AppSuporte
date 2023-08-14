@@ -10,6 +10,9 @@
 		081C0CBB2A8A972E00047D0D /* SuporteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081C0CBA2A8A972E00047D0D /* SuporteView.swift */; };
 		081C0CBD2A8A978500047D0D /* LocalizacoesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081C0CBC2A8A978500047D0D /* LocalizacoesView.swift */; };
 		081C0CBF2A8A979100047D0D /* AtividadeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081C0CBE2A8A979100047D0D /* AtividadeView.swift */; };
+		081C0CC12A8AB32800047D0D /* ProblemSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081C0CC02A8AB32800047D0D /* ProblemSheet.swift */; };
+		081C0CC52A8ABBD000047D0D /* DispositivosSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081C0CC42A8ABBD000047D0D /* DispositivosSheet.swift */; };
+		081C0CC82A8ABEAD00047D0D /* DispositivoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081C0CC72A8ABEAD00047D0D /* DispositivoItem.swift */; };
 		78B073462A8A94E2007FD475 /* SuporteAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B073452A8A94E2007FD475 /* SuporteAppApp.swift */; };
 		78B073482A8A94E2007FD475 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B073472A8A94E2007FD475 /* ContentView.swift */; };
 		78B0734A2A8A94E3007FD475 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78B073492A8A94E3007FD475 /* Assets.xcassets */; };
@@ -20,6 +23,9 @@
 		081C0CBA2A8A972E00047D0D /* SuporteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuporteView.swift; sourceTree = "<group>"; };
 		081C0CBC2A8A978500047D0D /* LocalizacoesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizacoesView.swift; sourceTree = "<group>"; };
 		081C0CBE2A8A979100047D0D /* AtividadeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtividadeView.swift; sourceTree = "<group>"; };
+		081C0CC02A8AB32800047D0D /* ProblemSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemSheet.swift; sourceTree = "<group>"; };
+		081C0CC42A8ABBD000047D0D /* DispositivosSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispositivosSheet.swift; sourceTree = "<group>"; };
+		081C0CC72A8ABEAD00047D0D /* DispositivoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispositivoItem.swift; sourceTree = "<group>"; };
 		78B073422A8A94E2007FD475 /* SuporteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuporteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B073452A8A94E2007FD475 /* SuporteAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuporteAppApp.swift; sourceTree = "<group>"; };
 		78B073472A8A94E2007FD475 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +44,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		081C0CC22A8AB32B00047D0D /* Sheets */ = {
+			isa = PBXGroup;
+			children = (
+				081C0CC02A8AB32800047D0D /* ProblemSheet.swift */,
+				081C0CC42A8ABBD000047D0D /* DispositivosSheet.swift */,
+			);
+			path = Sheets;
+			sourceTree = "<group>";
+		};
+		081C0CC32A8AB33700047D0D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				78B073472A8A94E2007FD475 /* ContentView.swift */,
+				081C0CBE2A8A979100047D0D /* AtividadeView.swift */,
+				081C0CBC2A8A978500047D0D /* LocalizacoesView.swift */,
+				081C0CBA2A8A972E00047D0D /* SuporteView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		081C0CC62A8ABE9300047D0D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				081C0CC72A8ABEAD00047D0D /* DispositivoItem.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		78B073392A8A94E2007FD475 = {
 			isa = PBXGroup;
 			children = (
@@ -57,11 +91,10 @@
 		78B073442A8A94E2007FD475 /* SuporteApp */ = {
 			isa = PBXGroup;
 			children = (
+				081C0CC62A8ABE9300047D0D /* Components */,
+				081C0CC32A8AB33700047D0D /* Views */,
+				081C0CC22A8AB32B00047D0D /* Sheets */,
 				78B073452A8A94E2007FD475 /* SuporteAppApp.swift */,
-				78B073472A8A94E2007FD475 /* ContentView.swift */,
-				081C0CBA2A8A972E00047D0D /* SuporteView.swift */,
-				081C0CBC2A8A978500047D0D /* LocalizacoesView.swift */,
-				081C0CBE2A8A979100047D0D /* AtividadeView.swift */,
 				78B073492A8A94E3007FD475 /* Assets.xcassets */,
 				78B0734B2A8A94E3007FD475 /* Preview Content */,
 			);
@@ -147,7 +180,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				081C0CBB2A8A972E00047D0D /* SuporteView.swift in Sources */,
+				081C0CC12A8AB32800047D0D /* ProblemSheet.swift in Sources */,
+				081C0CC52A8ABBD000047D0D /* DispositivosSheet.swift in Sources */,
 				081C0CBF2A8A979100047D0D /* AtividadeView.swift in Sources */,
+				081C0CC82A8ABEAD00047D0D /* DispositivoItem.swift in Sources */,
 				78B073482A8A94E2007FD475 /* ContentView.swift in Sources */,
 				081C0CBD2A8A978500047D0D /* LocalizacoesView.swift in Sources */,
 				78B073462A8A94E2007FD475 /* SuporteAppApp.swift in Sources */,
