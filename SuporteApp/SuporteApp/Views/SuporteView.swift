@@ -16,6 +16,7 @@ struct SuporteView: View {
         NavigationStack {
             
             VStack(alignment: .leading) {
+                
                 Button {
                     showingSheetProblem = true
                 } label: {
@@ -25,9 +26,6 @@ struct SuporteView: View {
                     Image(systemName: "mic.fill")
                         .foregroundColor(.secondary)
                     
-                }
-                .sheet(isPresented: $showingSheetProblem) {
-                    ProblemSheet(showingSheet: $showingSheetProblem)
                 }
                 .frame(width: .infinity)
                     .padding(10)
@@ -46,12 +44,15 @@ struct SuporteView: View {
                     .foregroundColor(.black)
 
                 }
-                .sheet(isPresented: $showingSheetDispositivos) {
-                    DispositivosSheet(showingSheet: $showingSheetDispositivos)
-                }
-                
+                                
                 Spacer()
                 
+            }
+            .sheet(isPresented: $showingSheetProblem) {
+                ProblemSheet(showingSheet: $showingSheetProblem)
+            }
+            .sheet(isPresented: $showingSheetDispositivos) {
+                DispositivosSheet(showingSheet: $showingSheetDispositivos)
             }
             .padding(.horizontal)
   

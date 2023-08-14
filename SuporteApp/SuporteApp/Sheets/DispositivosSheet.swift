@@ -25,6 +25,7 @@ struct DispositivosSheet: View {
     
                 Spacer()
             }
+            .navigationTitle("Meus dispositivos")
             .padding(.horizontal)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -38,7 +39,7 @@ struct DispositivosSheet: View {
                     
                 }
             }
-        }.navigationTitle("Meus dispositivos")
+        }
     }
 }
 
