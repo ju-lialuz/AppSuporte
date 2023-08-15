@@ -13,6 +13,11 @@
 		081C0CC12A8AB32800047D0D /* ProblemSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081C0CC02A8AB32800047D0D /* ProblemSheet.swift */; };
 		081C0CC52A8ABBD000047D0D /* DispositivosSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081C0CC42A8ABBD000047D0D /* DispositivosSheet.swift */; };
 		081C0CC82A8ABEAD00047D0D /* DispositivoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081C0CC72A8ABEAD00047D0D /* DispositivoItem.swift */; };
+		081C0CCA2A8BE22A00047D0D /* DispositivoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081C0CC92A8BE22A00047D0D /* DispositivoCard.swift */; };
+		081C0CCC2A8BE6F100047D0D /* FerramentasCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081C0CCB2A8BE6F100047D0D /* FerramentasCard.swift */; };
+		0898CF6C2A8BF0B600386DF4 /* AssinaturaSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0898CF6B2A8BF0B600386DF4 /* AssinaturaSheet.swift */; };
+		0898CF6E2A8BF14800386DF4 /* SenhaSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0898CF6D2A8BF14800386DF4 /* SenhaSheet.swift */; };
+		0898CF702A8BF15E00386DF4 /* CoberturaSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0898CF6F2A8BF15E00386DF4 /* CoberturaSheet.swift */; };
 		78B073462A8A94E2007FD475 /* SuporteAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B073452A8A94E2007FD475 /* SuporteAppApp.swift */; };
 		78B073482A8A94E2007FD475 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B073472A8A94E2007FD475 /* ContentView.swift */; };
 		78B0734A2A8A94E3007FD475 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78B073492A8A94E3007FD475 /* Assets.xcassets */; };
@@ -26,6 +31,11 @@
 		081C0CC02A8AB32800047D0D /* ProblemSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemSheet.swift; sourceTree = "<group>"; };
 		081C0CC42A8ABBD000047D0D /* DispositivosSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispositivosSheet.swift; sourceTree = "<group>"; };
 		081C0CC72A8ABEAD00047D0D /* DispositivoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispositivoItem.swift; sourceTree = "<group>"; };
+		081C0CC92A8BE22A00047D0D /* DispositivoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispositivoCard.swift; sourceTree = "<group>"; };
+		081C0CCB2A8BE6F100047D0D /* FerramentasCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FerramentasCard.swift; sourceTree = "<group>"; };
+		0898CF6B2A8BF0B600386DF4 /* AssinaturaSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssinaturaSheet.swift; sourceTree = "<group>"; };
+		0898CF6D2A8BF14800386DF4 /* SenhaSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenhaSheet.swift; sourceTree = "<group>"; };
+		0898CF6F2A8BF15E00386DF4 /* CoberturaSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoberturaSheet.swift; sourceTree = "<group>"; };
 		78B073422A8A94E2007FD475 /* SuporteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuporteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B073452A8A94E2007FD475 /* SuporteAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuporteAppApp.swift; sourceTree = "<group>"; };
 		78B073472A8A94E2007FD475 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +58,9 @@
 			isa = PBXGroup;
 			children = (
 				081C0CC02A8AB32800047D0D /* ProblemSheet.swift */,
+				0898CF6B2A8BF0B600386DF4 /* AssinaturaSheet.swift */,
+				0898CF6D2A8BF14800386DF4 /* SenhaSheet.swift */,
+				0898CF6F2A8BF15E00386DF4 /* CoberturaSheet.swift */,
 				081C0CC42A8ABBD000047D0D /* DispositivosSheet.swift */,
 			);
 			path = Sheets;
@@ -68,6 +81,8 @@
 			isa = PBXGroup;
 			children = (
 				081C0CC72A8ABEAD00047D0D /* DispositivoItem.swift */,
+				081C0CC92A8BE22A00047D0D /* DispositivoCard.swift */,
+				081C0CCB2A8BE6F100047D0D /* FerramentasCard.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -181,12 +196,17 @@
 			files = (
 				081C0CBB2A8A972E00047D0D /* SuporteView.swift in Sources */,
 				081C0CC12A8AB32800047D0D /* ProblemSheet.swift in Sources */,
+				081C0CCC2A8BE6F100047D0D /* FerramentasCard.swift in Sources */,
 				081C0CC52A8ABBD000047D0D /* DispositivosSheet.swift in Sources */,
+				081C0CCA2A8BE22A00047D0D /* DispositivoCard.swift in Sources */,
 				081C0CBF2A8A979100047D0D /* AtividadeView.swift in Sources */,
 				081C0CC82A8ABEAD00047D0D /* DispositivoItem.swift in Sources */,
+				0898CF6E2A8BF14800386DF4 /* SenhaSheet.swift in Sources */,
 				78B073482A8A94E2007FD475 /* ContentView.swift in Sources */,
+				0898CF702A8BF15E00386DF4 /* CoberturaSheet.swift in Sources */,
 				081C0CBD2A8A978500047D0D /* LocalizacoesView.swift in Sources */,
 				78B073462A8A94E2007FD475 /* SuporteAppApp.swift in Sources */,
+				0898CF6C2A8BF0B600386DF4 /* AssinaturaSheet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
