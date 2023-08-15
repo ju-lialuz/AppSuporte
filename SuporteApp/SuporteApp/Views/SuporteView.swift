@@ -47,11 +47,10 @@ struct SuporteView: View {
                         Image(systemName: "chevron.right")
                             .foregroundColor(.gray)
                     }
-                    .foregroundColor(.black)
-
                 }
+                .buttonStyle(.plain)
                 
-                ScrollView(.horizontal) {
+                ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 13) {
                         DispositivoCard(imagemDispositivo: "iphoneImage", nomeDispositivo: "Gigi Micher", modeloDispositivo: "Este iPhone 13")
                         DispositivoCard(imagemDispositivo: "macbookImage", nomeDispositivo: "MacBook Pro de Giovanna Micher", modeloDispositivo: "MacBook Pro 14''")
@@ -68,23 +67,23 @@ struct SuporteView: View {
                     .bold()
                 
                 Button {
-                    //
+                    showingSheetAssinatura = true
                 } label: {
-                    FerramentasCard(title: "Gerenciar assinatura", symbol: "calendar.badge.plus", color: .red)
+                    FerramentasCard(title: "Gerenciar assinatura", symbol: "calendar.badge.plus", color1: Color.green, color2: Color.red)
                 }
                 .buttonStyle(.plain)
                 
                 Button {
                     //
                 } label: {
-                    FerramentasCard(title: "Redefinir a senha", symbol: "rectangle.and.pencil.and.ellipsis", color: .gray)
+                    FerramentasCard(title: "Redefinir a senha", symbol: "rectangle.and.pencil.and.ellipsis", color1: Color.blue, color2: Color.gray)
                 }
                 .buttonStyle(.plain)
                 
                 Button {
                     //
                 } label: {
-                    FerramentasCard(title: "Verificar a cobertura", symbol: "apple.logo", color: .red)
+                    FerramentasCard(title: "Verificar a cobertura", symbol: "apple.logo", color1: Color.red, color2: Color.red)
                 }
                 .buttonStyle(.plain)
 
@@ -98,6 +97,9 @@ struct SuporteView: View {
             }
             .sheet(isPresented: $showingSheetDispositivos) {
                 DispositivosSheet(showingSheet: $showingSheetDispositivos)
+            }
+            .sheet(isPresented: $showingSheetAssinatura) {
+                AssinaturaSheet(showingSheet: $showingSheetAssinatura)
             }
             .padding(.horizontal)
   
