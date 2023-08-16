@@ -15,9 +15,20 @@ struct DispositivosSheet: View {
             VStack(alignment: .leading) {
                 
                 DispositivoItem(nomeDispositivo: "Gigi Micher", modeloDispositivo: "Este iPhone 13", imagemDispositivo: "iphoneImage")
+                Divider()
+                    .padding(.leading, 50)
+                
                 DispositivoItem(nomeDispositivo: "MacBook Pro de Giovanna Micher", modeloDispositivo: "MacBook Pro 14''", imagemDispositivo: "macbookImage")
+                Divider()
+                    .padding(.leading, 50)
+                
                 DispositivoItem(nomeDispositivo: "Juju Luz", modeloDispositivo: "Este iPhone 13", imagemDispositivo: "iphoneImage")
+                Divider()
+                    .padding(.leading, 50)
+                
                 DispositivoItem(nomeDispositivo: "MacBook Pro de Júlia Luz", modeloDispositivo: "MacBook Pro 14''", imagemDispositivo: "macbookImage")
+                Divider()
+                    .padding(.leading, 50)
                 
                 Text("Você pode gerenciar seus dispositivos em Ajustes. Para gerenciar AirPods, acesse Buscar.")
                     .font(.system(size: 14))

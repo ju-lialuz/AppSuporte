@@ -1,17 +1,17 @@
 //
-//  DispositivoItem.swift
+//  DispositivoItemGarantia.swift
 //  SuporteApp
 //
-//  Created by Giovanna Micher on 14/08/23.
+//  Created by Giovanna Micher on 16/08/23.
 //
 
 import SwiftUI
 
-struct DispositivoItem: View {
+struct DispositivoItemGarantia: View {
     @State var nomeDispositivo: String
     @State var modeloDispositivo: String
     @State var imagemDispositivo: String
-    
+    @State var garantia: String
     
     var body: some View {
         HStack(spacing: 15) {
@@ -25,15 +25,19 @@ struct DispositivoItem: View {
                 Text(modeloDispositivo)
                     .foregroundColor(.gray)
                     .font(.system(size: 12))
+                Text(garantia)
+                    .foregroundColor(.gray)
+                    .font(.system(size: 12))
+                
             }
         }
         //.border(.red)
     }
 }
 
-struct DispositivoItem_Previews: PreviewProvider {
+struct DispositivoItemGarantia_Previews: PreviewProvider {
     static var previews: some View {
-        DispositivoItem(nomeDispositivo: "Gigi Micher", modeloDispositivo: "Este iPhone 13", imagemDispositivo: "iphoneImage")
-        DispositivoItem(nomeDispositivo: "MacBook Pro de Giovanna Micher", modeloDispositivo: "MacBook Pro 14''", imagemDispositivo: "macbookImage")
+        DispositivoItemGarantia(nomeDispositivo: "Gigi Micher", modeloDispositivo: "Este iPhone 13", imagemDispositivo: "iphoneImage", garantia: "Garantia Limitada")
+        DispositivoItemGarantia(nomeDispositivo: "MacBook Pro de Giovanna Micher", modeloDispositivo: "MacBook Pro 14''", imagemDispositivo: "macbookImage", garantia: "Garantia Limitada")
     }
 }

@@ -10,13 +10,14 @@ import SwiftUI
 struct AssinaturaView: View {
     var body: some View {
         VStack {
-            Spacer()
             PicsArtItem()
+                .padding(.top, 50)
             Button {
                 //
             } label: {
                 Text("Sobre assinaturas e privacidade")
             }
+            .padding(.top, 40)
             
             Spacer()
         }
