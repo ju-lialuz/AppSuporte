@@ -13,6 +13,9 @@ struct SuporteView: View {
     @State var showingSheetAssinatura: Bool = false
     @State var showingSheetSenha: Bool = false
     @State var showingSheetCobertura: Bool = false
+    @State var showingSheetServicos: Bool = false
+    @State var showingSheetProdutos: Bool = false
+
 
     var body: some View {
         NavigationStack {
@@ -105,6 +108,12 @@ struct SuporteView: View {
                 .sheet(isPresented: $showingSheetCobertura) {
                     CoberturaSheet(showingSheet: $showingSheetCobertura)
                 }
+                .sheet(isPresented: $showingSheetProdutos) {
+                    ProdutosSheet(showingSheet: $showingSheetProdutos)
+                }
+                .sheet(isPresented: $showingSheetServicos) {
+                    ServicosSheet(showingSheet: $showingSheetServicos)
+                }
                 .padding(.horizontal)
                 
                 VStack(alignment: .leading) {
@@ -113,7 +122,7 @@ struct SuporteView: View {
                         Divider()
                             .padding(.vertical, 10)
                         Button {
-                            //
+                            showingSheetServicos = true
                         } label: {
                             HStack {
                                 Text("Meus serviços")
@@ -151,7 +160,7 @@ struct SuporteView: View {
                         .padding(10)
                     
                     Button {
-                        //
+                        showingSheetProdutos = true
                     } label: {
                         HStack {
                             Text("Mais produtos")
@@ -167,9 +176,9 @@ struct SuporteView: View {
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
-                        ProdutoCard(imagem: "airtagImage", title: "AirPods")
+                        ProdutoCard(imagem: "airpodsImage", title: "AirPods")
                         ProdutoCard(imagem: "airtagImage", title: "AirTag")
-                        ProdutoCard(imagem: "applemusicImage", title: "App Store")
+                        ProdutoCard(imagem: "appstoreImage", title: "App Store")
                         ProdutoCard(imagem: "applemusicImage", title: "Apple Music")
                     }
                 }
